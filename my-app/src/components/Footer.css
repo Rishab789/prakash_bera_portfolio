@@ -1,0 +1,35 @@
+.padding-container{
+    padding:1rem 2rem 1rem;
+
+}
+
+.mouse-move-div1{
+    font-weight: 500;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5f926;
+    cursor: pointer;
+   
+}
+
+.circle-div{
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    transition-duration: 1s;
+}
+
+.circle-div:hover{
+    background-color: #e5f926;
+    color:#000;
+    
+}

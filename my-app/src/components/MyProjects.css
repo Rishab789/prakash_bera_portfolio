@@ -1,0 +1,88 @@
+/* .mouse-move-div{
+    font-weight: 500;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5f926;
+    cursor: pointer;
+   
+} */
+.projects-container {
+    position: relative;
+    height: 300vh; /* Adjust height to allow enough scrolling space */
+  }
+  
+  .sticky-div {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sticky-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .mouse-move-div {
+    width: 100px;
+    height: 100px;
+    background-color: #e5f926; /* Set the background color to yellow */
+    border-radius: 50%; /* Make the div circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+   
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    animation: popout .1s ease-out;
+    -webkit-animation: popout 1s ease-out;
+  }
+  
+
+  
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.2)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    80%{-webkit-transform:scale(1.2)}
+    to{-webkit-transform:scale(1)}
+}
+ 
+
+/* Responsive styling for Samsung Galaxy S20 (screen size 320px to 384px width) */
+@media screen and (max-width: 384px) {
+  /* .projects-container {
+    height: 10vh;
+  } */
+
+   /* .sticky-div {
+    height: 20vh;
+    width: 100%;
+  } */
+
+  /* .sticky-div img {
+    height: 50vw; 
+  }  */
+
+  /* .sticky-div .absolute {
+    bottom: 8%; 
+    left: 4%;
+  } */
+/* 
+  .mouse-move-div {
+    width: 80px;
+    height: 80px; 
+    font-size: 12px;
+  } */
+}

@@ -1,0 +1,7 @@
+input:focus,select:focus,textarea:focus {
+    border: 1px solid #e5f926 !important;
+}
+
+option{
+    color: black;
+}

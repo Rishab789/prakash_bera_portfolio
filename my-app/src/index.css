@@ -1,0 +1,372 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./../node_modules/bootstrap-icons/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@font-face {
+  font-family: clash-display;
+  src: url("./../public/ClashDisplay-Variable.ttf");
+}
+
+
+
+.clash-font{
+  font-family: clash-display;
+  font-weight: 600;
+}
+
+.clash-font1{
+  font-family: clash-display;
+  font-weight: 500;
+}
+
+.sacramento-regular {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.clash-font2{
+  font-family: clash-display;
+  font-weight: 800;
+}
+
+.clash-font3{
+  font-family: clash-display;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.menu-font{
+  font-family: "Inter", sans-serif;
+}
+
+.container-class{
+  padding: 1rem 2rem;                                                                                                                         
+}
+
+.button-style{
+  padding: .9rem 2rem;
+  border-radius: .5rem;
+  font-weight: 400;
+}
+
+.button-style1{
+  padding: 1.2rem 2.5rem;
+  border-radius: .5rem;
+  font-weight: 400;
+
+}
+
+.rotate-circle {
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.arrow-animation {
+  animation: upDown 3s ease-in-out infinite; /* 3 seconds for a slow animation, repeat infinitely */
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust the value for the up movement */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.blur-element{
+  background-color: #e5f926;
+  filter: blur(26px);
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top:80%;
+  bottom: 0%;
+  left: 30%;
+  right: auto;
+}
+
+.scroll-left{
+  
+  margin: auto;
+  
+  position: relative;
+  height: 200px;
+  width: 80%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,1) 20% , rgba(0,0,0,1) 80%,rgba(0,0,0,0));
+}
+
+@keyframes scrollLeft{
+ 
+ to{
+  left: -200px;
+ }
+}
+
+
+.item {
+  position: absolute;
+  left: calc(200px * 8);
+  animation-name: scrollLeft;
+  animation-duration: 15s; 
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: 0s;
+}
+.item2 {
+  animation-delay: 1.875s; 
+}
+.item3 {
+  animation-delay: 3.75s;
+}
+.item4 {
+  animation-delay: 5.625s;
+}
+.item5 {
+  animation-delay: 7.5s;
+}
+.item6 {
+  animation-delay: 9.375s;
+}
+.item7 {
+  animation-delay: 11.25s;
+}
+.item8 {
+  animation-delay: 13.125s;
+}
+
+/* ---------------------------------------------- */
+
+.skill-strip-container {
+  overflow: hidden;
+  width: 80%;
+  position: relative;
+  margin: auto;
+  
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), black 10%, black 90%, rgba(0, 0, 0, 0));
+}
+
+.skill-strip {
+  display: flex;
+  gap: 4rem;
+  animation: scrollIcons 12s linear infinite;
+  width: max-content;
+}
+
+.skill-icon {
+  width: 80px;
+  height: auto;
+}
+
+@keyframes scrollIcons {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ------------------------------- */
+
+
+.word{
+  word-spacing: 10px;
+}
+
+.main-card-container{
+  gap: 2rem;
+  padding: 2rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+
+.card{
+  overflow: hidden;
+
+  border: 1px solid #323232;
+  border-radius: 1rem;
+ 
+  min-width: 370px;
+  padding: 3rem;
+  
+ 
+
+}
+
+.card:hover{
+  border-color: #e5f926;
+  transition-duration: .8s;
+}
+
+.card>p{
+  margin-top: 4rem;
+
+}
+
+.arrow:hover{
+  background-color: #e5f926;
+  border-color:#323232 ;
+  transition-duration: .8s;
+  
+}
+
+.arrow>i:hover{
+  color: #323232;
+}
+
+
+.slider-container {
+  overflow: hidden;
+  width: 300px; /* Adjust as needed */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100px; /* Adjust based on your design */
+  height: 100px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-width: 300px; /* Smaller cards for tablet-sized screens */
+  }
+}
+
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+  .card {
+    min-width: 100%; /* Full-width cards for mobile */
+    padding: 2rem; /* Reduce padding to fit smaller screens */
+  }
+/* 
+  .clash-font1 {
+    font-size: 2.5rem; 
+  } */
+}
+
+.element{
+  opacity: 1;
+  transform: translate3d(0px,0px,0px) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+  transform-style: preserve-3d;
+}
+
+.footer-button-overlay {
+  z-index: -1;
+  background-color: rgba(229,249,38,.3);
+  border-radius: 50%;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right:0% ;
+}
+
+
+
+/* Blog Section  */
+.blog-card{
+  border: 1px solid #323232;
+  border-radius: 2%;
+  overflow: hidden;
+  cursor: pointer;
+  transition-duration: .5s;
+  
+
+
+}
+.blog-card>img{
+  /* height: 70%;
+  width: 100%; */
+  
+}
+
+.blog-card:hover{
+  border-color: #e5f926;
+}
+
+.padding-global{
+  padding: 1rem 2rem;
+}
+
+.image-container{
+
+}
+
+.image-container>img{
+ 
+}
+
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+
+.ql-container {
+  border: none !important;
+}
+.ql-toolbar {
+  border: none !important;
+}
+.ql-editor {
+  border: none !important;
+  min-height:30rem !important;
+  font-size: 1.5rem;
+}
+
+
+@keyframes appear{
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+
+  }
+}
+
+.block{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.feedback{
+  font-weight: bold;
+}
+

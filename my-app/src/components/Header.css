@@ -1,0 +1,8 @@
+.menu-hover-color:hover{
+    color: #e5f926;
+    transition-duration: 1s;
+}
+
+button{
+    font-weight: bold !important;
+}

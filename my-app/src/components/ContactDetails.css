@@ -1,0 +1,29 @@
+    input,select,textarea{
+        background-color:transparent ;
+    }
+
+
+    input:focus{
+        border: none;
+
+    }
+
+    input{
+        color: #fff;
+    }
+
+    textarea{
+        color:#fff;
+    }
+
+    
+    .circle-div{
+        background-color: #474644;
+    }
+
+    .circle-div:hover>a{
+        color: #000;
+       
+    }
+
+    
