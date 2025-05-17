@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-import resume from "./../assets/prakash_chandra_bera_upd_2yoe.pdf";
+import resume from "./../assets/prakashchandrabera.pdf";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
@@ -20,10 +20,13 @@ const Header = () => {
       <header className="relative flex justify-between items-center h-24 container-class mx-auto px-4">
         {/* Logo */}
         <div>
-          <img
+          {/* <img
             src="https://cdn.prod.website-files.com/65f81804d647903ccaca5944/65fbd5ed536ff7cb226a1bbe_logo-2.svg"
             alt="Logo"
-          />
+          /> */}
+          <p className="text-white font-bold tracking-widest text-xl">
+            <span className="text-[#e5f926]">PCB</span>Creatives
+          </p>
         </div>
 
         {/* Desktop Menu */}
