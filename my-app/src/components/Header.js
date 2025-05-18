@@ -43,9 +43,9 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="/blogs" className="menu-hover-color">
+              <NavLink to="blogs" className="menu-hover-color">
                 BLOG
-              </a>
+              </NavLink>
             </li>
             <li>
               <NavLink

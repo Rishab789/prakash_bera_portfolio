@@ -6,10 +6,17 @@ const MyProjects = () => {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
+  // const onMouseMove = (e, index) => {
+  //   if (hoveredProject === index) {
+  //     setX(e.nativeEvent.offsetX);
+  //     setY(e.nativeEvent.offsetY);
+  //   }
+  // };
   const onMouseMove = (e, index) => {
     if (hoveredProject === index) {
-      setX(e.nativeEvent.offsetX);
-      setY(e.nativeEvent.offsetY);
+      const rect = e.currentTarget.getBoundingClientRect();
+      setX(e.clientX - rect.left);
+      setY(e.clientY - rect.top);
     }
   };
 
@@ -19,6 +26,13 @@ const MyProjects = () => {
 
   const onMouseLeave = () => {
     setHoveredProject(null);
+  };
+
+  const clickHandler = () => {
+    window.open(
+      "https://turf-soil-static-9mpx-gyof8447r-rishab789s-projects.vercel.app/",
+      "_blank"
+    );
   };
 
   return (
@@ -50,9 +64,11 @@ const MyProjects = () => {
                     UI/UX Design
                   </p>
                 </div>
+
                 {hoveredProject === 1 && (
                   <div
-                    className="mouse-move-div"
+                    onClick={clickHandler}
+                    className="mouse-move-div "
                     style={{
                       position: "absolute",
                       left: x,

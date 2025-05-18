@@ -80,14 +80,18 @@ const ContactDetails = () => {
             <p className="text-[#f1f4f4] text-2xl clash-font1">Follow Us</p>
             <div className="flex gap-4 ">
               <div className="circle-div">
-                <a href="#" className="bi bi-linkedin text-[#f1f4f4]"></a>
+                <a
+                  href="https://www.linkedin.com/in/prakashchandrabera/"
+                  className="bi bi-linkedin text-[#f1f4f4]"
+                  target="_blank"
+                ></a>
               </div>
               <div className="circle-div">
                 <a href="#" className="bi bi-instagram text-[#f1f4f4]"></a>
               </div>
-              <div className="circle-div">
+              {/* <div className="circle-div">
                 <a href="#" className="bi bi-twitter-x text-[#f1f4f4]"></a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -97,7 +101,7 @@ const ContactDetails = () => {
               <input
                 type="text"
                 placeholder="Full Name"
-                className="bg-transparent border-none focus:outline-none"
+                className="bg-transparent border-none focus:outline-none w-full"
                 id="name"
                 name="fullName"
                 onChange={changeHandler}
@@ -108,14 +112,14 @@ const ContactDetails = () => {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="focus:outline-none "
+                className="focus:outline-none w-full "
                 name="email"
                 onChange={changeHandler}
                 value={formData.email}
               />
             </div>
             <div className="w-full  border-b-[1px]">
-              <select className="w-full">
+              <select className="w-full text-white">
                 <option className="">Services</option>
                 <option>Web Developement</option>
                 <option>App Developement</option>

@@ -23,11 +23,11 @@ const Footer = () => {
               </p>
               <div className="text-xl my-4">
                 <p className="text-[#e5f926]">Give us a call:</p>
-                <p className="text-white">(123) 456-7890</p>
+                <p className="text-white">(+91) 7008716985</p>
               </div>
               <div className="text-xl">
                 <p className="text-[#e5f926]">Send us an email:</p>
-                <p className="text-white">info@mthemeus.com</p>
+                <p className="text-white">beraprakash456@gmail.com</p>
               </div>
             </div>
 
@@ -42,14 +42,18 @@ const Footer = () => {
             {/* Icons */}
             <div className="flex gap-4">
               <div className="circle-div">
-                <a href="#" className="bi bi-linkedin" />
+                <a
+                  href="https://www.linkedin.com/in/prakashchandrabera/"
+                  className="bi bi-linkedin"
+                  target="_blank"
+                />
               </div>
               <div className="circle-div">
                 <a href="#" className="bi bi-instagram" />
               </div>
-              <div className="circle-div">
+              {/* <div className="circle-div">
                 <a href="#" className="bi bi-twitter-x" />
-              </div>
+              </div> */}
             </div>
 
             {/* Menu */}

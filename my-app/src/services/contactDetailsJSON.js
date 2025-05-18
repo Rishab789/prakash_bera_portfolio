@@ -8,24 +8,24 @@ export const contactDets = [
     id: 1,
     src: call,
     label: "Phone",
-    value: "+91983746377",
+    value: "+917008716985",
   },
   {
     id: 2,
     src: email,
     label: "Email",
-    value: "test@gmail.com",
+    value: "beraprakash456@gmail.com",
   },
   {
     id: 3,
     src: location,
     label: "Location",
-    value: "Hyderabad, Ameerpet",
+    value: "Bangalore, BTM Layout, Phase 2",
   },
   {
     id: 4,
     src: time,
     label: "WorkingTime",
-    value: "9:30 am to 6:00 pm",
+    value: "9:30 am to 6:00 pm IST",
   },
 ];
